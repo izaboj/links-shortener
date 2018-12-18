@@ -5,7 +5,7 @@ Java Script library for shortening links depending on the search phrase.
 
 [![github issue](https://img.shields.io/github/issues/izaboj/links-shortener.svg)](https://github.com/izaboj/links-shortener)
 [![license](https://img.shields.io/github/license/izaboj/links-shortener.svg)](https://github.com/izaboj/links-shortener)
-[![npm ](https://img.shields.io/npm/v/izaboj/links-shortener.svg)](https://github.com/izaboj/links-shortener)
+[![npm ](https://img.shields.io/npm/v/izaboj/links-shortener.svg)](https://www.npmjs.com/package/links-shortener)
 [![npm bundle size](https://img.shields.io/bundlephobia/min/izaboj/links-shortener.svg)](https://github.com/izaboj/links-shortener)
 
 
@@ -17,7 +17,7 @@ Java Script library for shortening links depending on the search phrase.
 
 ## Installation
 * download from GitHub
-* npm: `npm install links-shortener.js`
+* npm: `npm install links-shortener
 
 ## makeURLShorter
 makeURLShorter - main function for shortening link.
