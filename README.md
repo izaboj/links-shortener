@@ -3,10 +3,11 @@ links-shortener
 Java Script library for shortening links depending on the search phrase.
 
 
-[![github issue](https://img.shields.io/github/issues/izaboj/links-shortener.svg)](https://github.com/izaboj/links-shortener)
-[![license](https://img.shields.io/github/license/izaboj/links-shortener.svg)](https://github.com/izaboj/links-shortener)
-[![npm ](https://img.shields.io/npm/v/izaboj/links-shortener.svg)](https://www.npmjs.com/package/links-shortener)
-[![npm bundle size](https://img.shields.io/bundlephobia/min/izaboj/links-shortener.svg)](https://github.com/izaboj/links-shortener)
+[![github issue](https://img.shields.io/github/issues/izaboj/links-shortener.svg)](https://github.com/izaboj/links-shortener/issues)
+[![dependencies Status](https://david-dm.org/izaboj/links-shortener/status.svg)](https://david-dm.org/izaboj/links-shortener)
+[![license](https://img.shields.io/github/license/izaboj/links-shortener.svg)](https://opensource.org/licenses/MIT)
+[![npm version](https://img.shields.io/npm/v/links-shortener.svg)](https://www.npmjs.com/package/links-shortener)
+[![npm bundle size](https://img.shields.io/bundlephobia/min/links-shortener.svg)](https://www.npmjs.com/package/links-shortener)
 
 
 
@@ -17,7 +18,7 @@ Java Script library for shortening links depending on the search phrase.
 
 ## Installation
 * download from GitHub
-* npm: `npm install links-shortener`
+* npm: `npm install links-shortener.js`
 
 ## makeURLShorter
 makeURLShorter - main function for shortening link.
@@ -33,41 +34,41 @@ The examples below showing how the link is shortening depending on where the sea
 
 ### Search phrase in url domain
 ```javascript
-var linkShortener = require('links-shortener');
+	var linkShortener = require('links-shortener');
 
-var link = "http://www.subdomain.domain.com/directory2018/home/test/cat3?param1&param2&param3#lastpartofverylongurl";
-var maxLength = 40;      // max lenght of link
-var searchValue = 'com';
+	var link = "http://www.subdomain.domain.com/directory2018/home/test/cat3?param1&param2&param3#lastpartofverylongurl";
+	var maxLength = 40;      // max lenght of link
+	var searchValue = 'com';
 
-var shortenedLink = linkShortener.makeURLShorter(link, searchValue, maxLength);
-console.log(shortenedLink);
+	var shortenedLink = linkShortener.makeURLShorter(link, searchValue, maxLength);
+	console.log(shortenedLink);
 
-//prints 'www.subdomain.domain.com/directory2018/home/test/cat3?param1&param2&param3#lastpartofverylongurl'
+	//prints 'www.subdomain.domain.com/directory2018/home/test/cat3?param1&param2&param3#lastpartofverylongurl'
 ```
 ### Search phrase in url path
 ```javascript
-var searchValue = 'test';
+	var searchValue = 'test';
 
-var shortenedLink = linkShortener.makeURLShorter(link, searchValue, maxLength);
-console.log(shortenedLink);
+	var shortenedLink = linkShortener.makeURLShorter(link, searchValue, maxLength);
+	console.log(shortenedLink);
 
-// prints '...domain.domain.com/...home/test/cat3?param1&param2&param3#lastpartofverylongurl'    
+	// prints '...domain.domain.com/...home/test/cat3?param1&param2&param3#lastpartofverylongurl'    
 ```
 ### Search phrase in url query
 ```javascript
-var searchValue = 'param2';
+	var searchValue = 'param2';
 
-var shortenedLink = linkShortener.makeURLShorter(link, searchValue, maxLength);
-console.log(shortenedLink);
+	var shortenedLink = linkShortener.makeURLShorter(link, searchValue, maxLength);
+	console.log(shortenedLink);
 
-// prints '...domain.com/directory...?...ram1&param2&param#lastpartofverylongurl'
+	// prints '...domain.com/directory...?...ram1&param2&param#lastpartofverylongurl'
 ```
 ### Search phrase(searchValue) in url fragment
 ```javascript
-var searchValue = 'part';
+	var searchValue = 'part';
 
-var shortenedLink = linkShortener.makeURLShorter(link, searchValue, maxLength);
-console.log(shortenedLink);
+	var shortenedLink = linkShortener.makeURLShorter(link, searchValue, maxLength);
+	console.log(shortenedLink);
 
-//prints '...ain.com/direct...?param1...#lastpartofverylongurl'
+	//prints '...ain.com/direct...?param1...#lastpartofverylongurl'
 ```
