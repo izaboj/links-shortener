@@ -18,7 +18,7 @@ Java Script library for shortening links depending on the search phrase.
 
 ## Installation
 * download from GitHub
-* npm: `npm install links-shortener.js`
+* npm: `npm install links-shortener`
 
 ## makeURLShorter
 makeURLShorter - main function for shortening link.
