@@ -12,11 +12,11 @@ Java Script library for shortening links depending on the search phrase.
 * npm: `npm install links-shortener.js`
 
 ## makeURLShorter 
-makeURLSHorter - main function for shortening link. 
+makeURLShorter - main function for shortening link. 
 Parameters: 
-** link 
-** searchValue
-** maxLength
+* link 
+* searchValue
+* maxLength
 	
 See examples below 
 
@@ -58,7 +58,7 @@ The examples below showing how the link is shortening depending on where the sea
 
     var shortenedLink = linkShortener.makeURLShorter(link, searchValue, maxLength);
 
-console.log(shortenedLink);
+    console.log(shortenedLink);
 ```
 
 
