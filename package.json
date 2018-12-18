@@ -14,8 +14,8 @@
   "bugs": {
       "url" : "https://github.com/izaboj/links-shortener/issues"
   },
-  "author": <"izaboj@gmail.com">,
-  "license": "ISC",
+  "author": "izaboj@gmail.com",
+  "license": "MIT",
   "dependencies": {
     "urijs": "^1.19.1"
   },
