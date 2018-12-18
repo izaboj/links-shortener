@@ -1,0 +1,34 @@
+{
+  "name": "links-shortener",
+  "version": "1.0.1",
+  "description": "JS library for shortening links depending on the search phrase",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+      "type": "git",
+      "url": "https://github.com/izaboj/links-shortener.git"
+  },
+  "homepage": "https://github.com/izaboj/links-shortener",
+  "bugs": {
+      "url" : "https://github.com/izaboj/links-shortener/issues"
+  },
+  "author": <"izaboj@gmail.com">,
+  "license": "ISC",
+  "dependencies": {
+    "urijs": "^1.19.1"
+  },
+  "keywords": [
+      "link",
+      "url",
+      "shortener",
+      "short",
+      "uri",
+      "phrase",
+      "shorter",
+      "search",
+      "match",
+      "string"
+  ]
+}
